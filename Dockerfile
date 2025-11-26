@@ -1,17 +1,11 @@
-# Step 1: Use official Python image
-FROM python:3.10
+FROM python:3.11-slim
 
-# Step 2: Set working directory
 WORKDIR /app
 
-# Step 3: Copy project files
+COPY requirements.txt .
+
+RUN pip install --no-cache-dir -r requirements.txt
+
 COPY . .
 
-# Step 4: Install dependencies
-RUN pip install -r requirements.txt
-
-# Step 5: Expose Flask port
-EXPOSE 5000
-
-# Step 6: Run Flask
-CMD ["python", "run.py"]
+CMD ["python", "app.py"]
