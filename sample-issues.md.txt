@@ -1,0 +1,17 @@
+# Sample Issues Logged & Resolved
+
+## Issue 1 – API Route Not Working
+**Status:** Resolved  
+**Fix:** Updated Flask route and returned JSON correctly.
+
+---
+
+## Issue 2 – Docker Container Not Starting
+**Status:** Resolved  
+**Fix:** Added missing package in `requirements.txt` and rebuilt the image.
+
+---
+
+## Issue 3 – Git Push Failed
+**Status:** Resolved  
+**Fix:** Updated branch name to `main` and removed venv from Git tracking.
